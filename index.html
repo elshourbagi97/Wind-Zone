@@ -114,7 +114,7 @@ input:focus, select:focus { outline: none !important; border-color: var(--primar
 }
 .btn-calc { height: 46px; font-size: 12px; font-weight: 800; border: none; border-radius: 10px; background: var(--green); color: white; cursor: pointer; padding: 0 4px; }
 .btn-view-route { height: 46px; font-size: 12px; font-weight: 800; border: none; border-radius: 10px; background: var(--primary); color: white; cursor: pointer; padding: 0 4px; }
-.btn-reset { height: 46px; font-size: 12px; font-weight: 800; border: none; border-radius: 10px; background: #fef2f2; color: var(--red); border: 1px solid #fecaca; cursor: pointer; padding: 0 4px; }
+.btn-reset { height: 46px; font-size: 12px; font-weight: 800; border-radius: 10px; background: #fef2f2; color: var(--red); border: 1px solid #fecaca; cursor: pointer; padding: 0 4px; }
 .btn-calc:active, .btn-view-route:active, .btn-reset:active { transform: scale(0.97); }
 
 /* Tabs Bar */
@@ -123,7 +123,7 @@ input:focus, select:focus { outline: none !important; border-color: var(--primar
   background: rgba(255, 255, 255, 0.96); backdrop-filter: blur(12px); 
   border-top: 1px solid var(--card-border); display: flex; padding: 8px 12px 20px 12px; gap: 12px; z-index: 100; max-width: 650px; margin: auto;
 }
-.tab { flex: 1; height: 42px; border: none; background: transparent; color: var(--text-muted); font-weight: 700; border-radius: 10px; cursor: pointer; font-size: 12px; display: flex; align-items: center; justify-content: center; gap: 6px; }
+.tab { flex: 1; height: 42px; border: none; background: transparent; color: var(--text-muted); font-weight: 700; border-radius: 10px; cursor: pointer; font-size: 12px; display: flex; align-items: center; justify-content: center; }
 .tab.active { background: var(--primary-glow); color: var(--primary); border: 1px solid var(--primary); }
 
 /* LEAFLET FULLSCREEN MODAL POP-UP */
@@ -192,7 +192,7 @@ input:focus, select:focus { outline: none !important; border-color: var(--primar
 .zone-manager{background:#111c30;border:1px solid #334155;border-radius:10px;padding:8px;margin-bottom:8px;color:#e2e8f0;max-height:205px;overflow:auto;flex-shrink:0}
 .zone-manager-head{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:7px;color:#38bdf8;font-size:11px;font-weight:800}
 .zone-manager-grid{display:grid;grid-template-columns:1fr 1fr;gap:6px}
-.zone-manager input,.zone-manager select,.zone-manager textarea{box-sizing:border-box;width:100%;background:#0b1425;color:#f8fafc;border:1px solid #475569;border-radius:6px;padding:7px;font-size:11px;min-width:0}
+.zone-manager input,.zone-manager select,.zone-manager textarea{box-sizing:border-box;width:100%;background:#0b1425;color:#f8fafc;border:1px solid #475569;border-radius:6px;padding:7px;font-size:11px}
 .zone-manager textarea{min-height:55px;resize:vertical;direction:ltr;text-align:left;font-family:monospace}
 .zone-actions{display:flex;flex-wrap:wrap;gap:5px;margin-top:6px}
 .zone-actions button{border:0;border-radius:6px;padding:6px 9px;font-size:10px;font-weight:800;cursor:pointer;background:#334155;color:#fff}
@@ -240,7 +240,7 @@ input:focus, select:focus { outline: none !important; border-color: var(--primar
 
 
 /* Speed / Distance / Time calculator popup */
-.sdt-open-btn { width:100%; min-height:46px; margin:-2px 0 14px; border:0; border-radius:10px; background:linear-gradient(135deg,#0f766e,#0d9488); color:#fff; font-size:13px; font-weight:800; cursor:pointer; box-shadow:0 4px 10px rgba(13,148,136,.18); }
+.sdt-open-btn { width:100%; min-height:46px; margin:-2px 0 14px; border:0; border-radius:10px; background:linear-gradient(135deg,#0f766e,#0d9488); color:#fff; font-size:13px; font-weight:800; cursor:pointer; }
 .sdt-overlay { position:fixed; inset:0; z-index:1200; display:flex; align-items:center; justify-content:center; padding:14px; background:rgba(15,23,42,.78); }
 .sdt-dialog { width:100%; max-width:560px; max-height:92dvh; overflow:auto; background:#fff; color:#0f172a; border:1px solid #cbd5e1; border-radius:18px; box-shadow:0 22px 60px rgba(0,0,0,.35); padding:18px; }
 .sdt-heading { margin:0 0 6px; color:#1d4ed8; font-size:18px; font-weight:900; text-align:center; }
@@ -255,14 +255,14 @@ input:focus, select:focus { outline: none !important; border-color: var(--primar
 .sdt-open-btn:active,.sdt-exit:active { transform:scale(.98); }
 @media (min-width:520px) { .sdt-fields { grid-template-columns:1fr; } .sdt-dialog { padding:22px; } }
 
-.dms-row{display:grid;grid-template-columns:1fr 1fr 1.2fr 58px;gap:4px;direction:ltr}.dms-row input,.dms-row select{min-width:0!important;padding:6px 4px!important;text-align:center!important;font-size:12px!important}
-.wind-result-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}.wind-result{background:#eff6ff;border-radius:10px;padding:10px;text-align:center;color:#1e40af;font-weight:800}.wind-result small{display:block;font-size:10px;color:#475569;margin-bottom:4px}
+.dms-row{display:grid;grid-template-columns:1fr 1fr 1.2fr 58px;gap:4px;direction:ltr}.dms-row input,.dms-row select{min-width:0!important;padding:6px 4px!important;text-align:center!important;font-size:11px!important}
+.wind-result-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}.wind-result{background:#eff6ff;border-radius:10px;padding:10px;text-align:center;color:#1e40af;font-weight:800}.wind-result small{display:block;font-size:10px;margin-bottom:5px}
 .hidden { display: none !important; }
 .note { font-size: 10px; color: var(--text-muted); margin-top: 4px; }
 
 /* Zone builder v5 */
 .zone-launch{display:flex;gap:7px;align-items:stretch;margin:8px 0;flex-wrap:nowrap}
-.zone-launch>button{flex:1 1 0!important;width:0;min-width:0!important;min-height:50px!important;margin:0!important;padding:8px 12px!important;display:flex;align-items:center;justify-content:center;text-align:center;line-height:1.35}
+.zone-launch>button{flex:1 1 0!important;width:0;min-width:0!important;min-height:50px!important;margin:0!important;padding:8px 12px!important;display:flex;align-items:center;justify-content:center;text-align:center;line-height:1.25}
 #openSdtCalculator{background:linear-gradient(135deg,#0f766e,#0d9488)!important;box-shadow:0 4px 10px rgba(13,148,136,.18)}
 #openWindCalculator{background:linear-gradient(135deg,#7c3aed,#6d28d9)!important;box-shadow:0 4px 10px rgba(109,40,217,.18)}
 @media(max-width:520px){.zone-launch{flex-direction:column}.zone-launch>button{width:100%;flex:auto}}
@@ -353,7 +353,7 @@ input:focus, select:focus { outline: none !important; border-color: var(--primar
 <!-- Weight Calculator Panel -->
 <section class="panel" id="weightPanel">
   <h2>Weight & Fuel Limit / الأوزان والوقود</h2>
-  <div class="zone-launch"><button class="sdt-open-btn" id="openSdtCalculator" type="button" style="flex:1;min-width:220px">Speed – Distance – Time Calculator / حاسبة السرعة والمسافة والزمن</button><button type="button" id="openWindCalculator" style="flex:1;min-width:220px;background:#2563eb;color:#fff;border:0;border-radius:10px;min-height:46px;font-weight:800;cursor:pointer">Calculate Wind Component / حاسبة مركبات الرياح</button></div>
+  <div class="zone-launch"><button class="sdt-open-btn" id="openSdtCalculator" type="button" style="flex:1;min-width:220px">Speed – Distance – Time Calculator / حاسبة السرعة والمسافة والزمن</button><button type="button" id="openWindCalculator" class="sdt-open-btn" style="flex:1;min-width:220px">Wind Component Calculator / حاسبة مركبات الرياح</button></div>
   <div class="grid">
     <div class="field">
       <label for="airport">Departure Airport / المطار</label>
@@ -544,8 +544,8 @@ input:focus, select:focus { outline: none !important; border-color: var(--primar
             <div class="zb-grid">
               <div><label>Zone Label / اسم المنطقة</label><input id="zoneName" placeholder="WESTERN DESERT ZONE"></div>
               
-              <div><label>Latitude / خط العرض</label><div class="dms-row"><input id="zoneLatDeg" type="number" min="0" max="90" placeholder="Deg"><input id="zoneLatMin" type="number" min="0" max="59" placeholder="Min"><input id="zoneLatSec" type="number" min="0" max="59.999" step="any" placeholder="Sec"><select id="zoneLatHem"><option>N</option><option>S</option></select></div></div>
-              <div><label>Longitude / خط الطول</label><div class="dms-row"><input id="zoneLonDeg" type="number" min="0" max="180" placeholder="Deg"><input id="zoneLonMin" type="number" min="0" max="59" placeholder="Min"><input id="zoneLonSec" type="number" min="0" max="59.999" step="any" placeholder="Sec"><select id="zoneLonHem"><option>E</option><option>W</option></select></div></div>
+              <div><label>Latitude / خط العرض</label><div class="dms-row"><input id="zoneLatDeg" type="number" min="0" max="90" placeholder="Deg"><input id="zoneLatMin" type="number" min="0" max="59" placeholder="Min"><input id="zoneLatSec" type="number" min="0" max="59" step="any" placeholder="Sec"><select id="zoneLatHem"><option>N</option><option>S</option></select></div></div>
+              <div><label>Longitude / خط الطول</label><div class="dms-row"><input id="zoneLonDeg" type="number" min="0" max="180" placeholder="Deg"><input id="zoneLonMin" type="number" min="0" max="59" placeholder="Min"><input id="zoneLonSec" type="number" min="0" max="59" step="any" placeholder="Sec"><select id="zoneLonHem"><option>E</option><option>W</option></select></div></div>
             </div>
             <div class="zb-actions">
               <button type="button" id="addZonePointBtn">＋ Add Zone Point</button>
@@ -554,7 +554,7 @@ input:focus, select:focus { outline: none !important; border-color: var(--primar
               <button type="button" class="gray" id="zoneMapPickBtn">Pick on Map</button>
               <button type="button" class="red" id="cancelZoneBtn">Cancel</button>
             </div>
-            <div class="zb-note">أدخل الإحداثيات ثم Add Zone Point؛ ستظهر النقطة والخط الواصل إليها فورًا على الخريطة. END ZONE يغلق الحدود بوصل آخر نقطة بأول نقطة.</div>
+            <div class="zb-note">أدخل الإحداثيات ثم Add Zone Point؛ ستظهر النقطة والخط الواصل إليها فورًا على الخريطة. END ZONE يغلق المنطقة.</div>
             <div id="zonePointsList" class="zb-point-list"></div>
             <div id="zoneStatus" class="zb-metric">Add at least 3 points to create a zone.</div>
           </div>
@@ -564,8 +564,8 @@ input:focus, select:focus { outline: none !important; border-color: var(--primar
               <div><label>Select Zone</label><select id="routeZoneSelect"><option value="">Select a zone…</option></select></div>
               <div><label>Route Label</label><input id="routeName" placeholder="PATROL ROUTE 01"></div>
               <div><label>Point Name</label><input id="routePointName" placeholder="WP 01"></div>
-              <div><label>Latitude / خط العرض</label><div class="dms-row"><input id="routeLatDeg" type="number" min="0" max="90" placeholder="Deg"><input id="routeLatMin" type="number" min="0" max="59" placeholder="Min"><input id="routeLatSec" type="number" min="0" max="59.999" step="any" placeholder="Sec"><select id="routeLatHem"><option>N</option><option>S</option></select></div></div>
-              <div><label>Longitude / خط الطول</label><div class="dms-row"><input id="routeLonDeg" type="number" min="0" max="180" placeholder="Deg"><input id="routeLonMin" type="number" min="0" max="59" placeholder="Min"><input id="routeLonSec" type="number" min="0" max="59.999" step="any" placeholder="Sec"><select id="routeLonHem"><option>E</option><option>W</option></select></div></div>
+              <div><label>Latitude / خط العرض</label><div class="dms-row"><input id="routeLatDeg" type="number" min="0" max="90" placeholder="Deg"><input id="routeLatMin" type="number" min="0" max="59" placeholder="Min"><input id="routeLatSec" type="number" min="0" max="59" step="any" placeholder="Sec"><select id="routeLatHem"><option>N</option><option>S</option></select></div></div>
+              <div><label>Longitude / خط الطول</label><div class="dms-row"><input id="routeLonDeg" type="number" min="0" max="180" placeholder="Deg"><input id="routeLonMin" type="number" min="0" max="59" placeholder="Min"><input id="routeLonSec" type="number" min="0" max="59" step="any" placeholder="Sec"><select id="routeLonHem"><option>E</option><option>W</option></select></div></div>
             </div>
             <div class="zb-actions">
               <button type="button" id="addRoutePointBtn">＋ Add Route Point</button>
@@ -652,9 +652,9 @@ input:focus, select:focus { outline: none !important; border-color: var(--primar
       <div class="sdt-field" id="sdtTimeField">
         <label>Time / الزمن (HH : MM : SS)</label>
         <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px;direction:ltr;">
-          <div><input id="sdtTimeHours" type="number" inputmode="numeric" min="0" step="1" placeholder="HH" aria-label="Hours" style="width:100%;text-align:center;"><small style="display:block;text-align:center;color:#64748b;">Hour / ساعة</small></div>
-          <div><input id="sdtTimeMinutes" type="number" inputmode="numeric" min="0" max="59" step="1" placeholder="MM" aria-label="Minutes" style="width:100%;text-align:center;"><small style="display:block;text-align:center;color:#64748b;">Minute / دقيقة</small></div>
-          <div><input id="sdtTimeSeconds" type="number" inputmode="numeric" min="0" max="59" step="1" placeholder="SS" aria-label="Seconds" style="width:100%;text-align:center;"><small style="display:block;text-align:center;color:#64748b;">Second / ثانية</small></div>
+          <div><input id="sdtTimeHours" type="number" inputmode="numeric" min="0" step="1" placeholder="HH" aria-label="Hours" style="width:100%;text-align:center;"><small style="display:block;text-align:center;color:#64748b;font-size:10px;">Hours</small></div>
+          <div><input id="sdtTimeMinutes" type="number" inputmode="numeric" min="0" max="59" step="1" placeholder="MM" aria-label="Minutes" style="width:100%;text-align:center;"><small style="display:block;text-align:center;color:#64748b;font-size:10px;">Minutes</small></div>
+          <div><input id="sdtTimeSeconds" type="number" inputmode="numeric" min="0" max="59" step="1" placeholder="SS" aria-label="Seconds" style="width:100%;text-align:center;"><small style="display:block;text-align:center;color:#64748b;font-size:10px;">Seconds</small></div>
         </div>
       </div>
       <div class="sdt-field" id="sdtSpeedField">
@@ -676,10 +676,10 @@ input:focus, select:focus { outline: none !important; border-color: var(--primar
 <div class="sdt-overlay hidden" id="windCalculatorModal" role="dialog" aria-modal="true">
  <div class="sdt-dialog"><h3 class="sdt-heading">Calculate Wind Component</h3><p class="sdt-subtitle">Enter wind direction, wind speed, and runway heading.</p>
  <div class="sdt-fields">
-  <div class="sdt-field"><label>Wind Direction (°) / اتجاه الرياح</label><input id="windDir" type="number" min="0" max="360" placeholder="0–360"></div>
-  <div class="sdt-field"><label>Wind Speed (kt) / سرعة الرياح</label><input id="windSpeed" type="number" min="0" step="any" placeholder="knots"></div>
-  <div class="sdt-field"><label>Runway Heading (°) / اتجاه المدرج</label><input id="runwayHeading" type="number" min="0" max="360" placeholder="0–360"></div>
- </div><div class="wind-result-grid" style="margin:12px 0"><div class="wind-result"><small>Crosswind Component</small><span id="windCross">— kt</span></div><div class="wind-result"><small>Headwind (+) / Tailwind (−)</small><span id="windHead">— kt</span></div></div>
+  <div class="sdt-field"><label>Wind Direction (°) / اتجاه الرياح</label><input id="windDir" type="number" inputmode="numeric" min="0" max="360" step="1" placeholder="0–360"></div>
+  <div class="sdt-field"><label>Wind Speed (kt) / سرعة الرياح</label><input id="windSpeed" type="number" inputmode="decimal" min="0" step="any" placeholder="knots"></div>
+  <div class="sdt-field"><label>Runway Heading (°) / اتجاه المدرج</label><input id="runwayHeading" type="number" inputmode="numeric" min="0" max="360" step="1" placeholder="0–360"></div>
+ </div><div class="wind-result-grid" style="margin:12px 0"><div class="wind-result"><small>Crosswind Component</small><span id="windCross">— kt</span></div><div class="wind-result"><small>Headwind (Positive) / Tailwind (Negative)</small><span id="windHead">— kt</span></div></div>
  <div class="sdt-formula" id="windAngle">Relative wind angle: —</div><button class="sdt-exit" id="exitWindCalculator" type="button">Exit / خروج</button></div></div>
 <!-- Bottom Navigation Tabs -->
 <nav class="tabs">
@@ -998,449 +998,4 @@ $("weightFuelLitres").oninput = (e) => {
   calcFlight();
 };
 
-$("resetWeight").onclick = () => {
-  $("airport").value = "siwa";
-  $("aircraft").value = "";
-  $("weightFuelLitres").value = "";
-  $("extra").value = "0";
-  calcWeight();
-  calcFlight();
-};
-
-$("totalFuel").oninput = (e) => {
-  $("weightFuelLitres").value = e.target.value;
-  calcWeight();
-  calcFlight();
-};
-
-const navInputs = [
-  "navAirport", "startLatHem", "startLatDeg", "startLatMin", "startLatSec",
-  "startLonHem", "startLonDeg", "startLonMin", "startLonSec",
-  "targetLatHem", "targetLatDeg", "targetLatMin", "targetLatSec",
-  "targetLonHem", "targetLonDeg", "targetLonMin", "targetLonSec",
-  "roundTrip", "distanceUnit", "remainingFuel", "workTime"
-];
-
-navInputs.forEach(id => {
-  $(id).addEventListener("input", calcFlight);
-  $(id).addEventListener("change", calcFlight);
-});
-
-$("navAirport").onchange = (e) => {
-  let val = e.target.value;
-  if (val === "custom") {
-    $("manualStart").classList.remove("hidden");
-    $("startAirportCoords").textContent = "Enter manual coordinates below";
-  } else {
-    $("manualStart").classList.add("hidden");
-    if (startingPoints[val]) {
-      $("startAirportCoords").textContent = startingPoints[val].text;
-    }
-  }
-  calcFlight();
-};
-
-$("resetNav").onclick = () => {
-  $("navAirport").value = "siwa";
-  $("manualStart").classList.add("hidden");
-  $("startAirportCoords").textContent = startingPoints["siwa"].text;
-  ["startLatDeg", "startLatMin", "startLatSec", "startLonDeg", "startLonMin", "startLonSec",
-   "targetLatDeg", "targetLatMin", "targetLatSec", "targetLonDeg", "targetLonMin", "targetLonSec",
-   "totalFuel", "remainingFuel", "workTime"].forEach(id => $(id).value = "");
-  $("roundTrip").checked = false;
-  $("distanceUnit").value = "KM";
-  calcFlight();
-};
-
-$("calculateFlight").onclick = calcFlight;
-
-// =========================================================================
-// LEAFLET MAP OFFLINE ENGINE WITH EXACT OVERLAPPING RETURN ROUTE
-// =========================================================================
-let leafletMap = null;
-let airportMarkersGroup = null;
-let routeLayerGroup = null;
-let showArrows = true;
-
-const egyptBounds = L.latLngBounds([21.5, 24.2], [32.2, 37.2]);
-
-function calculateAngleDeg(lat1, lon1, lat2, lon2) {
-  const rad = d => d * Math.PI / 180;
-  const dLon = rad(lon2 - lon1);
-  const y = Math.sin(dLon) * Math.cos(rad(lat2));
-  const x = Math.cos(rad(lat1)) * Math.sin(rad(lat2)) - Math.sin(rad(lat1)) * Math.cos(rad(lat2)) * Math.cos(dLon);
-  return (Math.atan2(y, x) * 180 / Math.PI + 360) % 360;
-}
-
-function createArrowIcon(angleDeg, color) {
-  return L.divIcon({
-    className: 'route-arrow-marker',
-    html: `<svg width="24" height="24" viewBox="0 0 24 24" style="transform: rotate(${angleDeg}deg); filter: drop-shadow(0 2px 3px rgba(0,0,0,0.8));">
-             <path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71z" fill="${color}" stroke="#ffffff" stroke-width="1.5"/>
-           </svg>`,
-    iconSize: [24, 24],
-    iconAnchor: [12, 12]
-  });
-}
-
-function initAirportCheckboxes() {
-  const container = $("airportChecklist");
-  container.innerHTML = "";
-  leafletAirportsList.forEach(ap => {
-    let lbl = document.createElement("label");
-    lbl.className = "airport-check-item";
-
-    let leftDiv = document.createElement("div");
-    leftDiv.className = "airport-check-left";
-
-    let cb = document.createElement("input");
-    cb.type = "checkbox";
-    cb.checked = ap.checked;
-    cb.onchange = () => {
-      ap.checked = cb.checked;
-      updateLeafletAirports();
-    };
-
-    let span = document.createElement("span");
-    span.textContent = ap.name;
-    span.title = ap.name;
-
-    leftDiv.appendChild(cb);
-    leftDiv.appendChild(span);
-    lbl.appendChild(leftDiv);
-
-    if (ap.custom) {
-      let delBtn = document.createElement("button");
-      delBtn.type = "button";
-      delBtn.className = "btn-del-ap";
-      delBtn.textContent = "✕";
-      delBtn.onclick = (e) => {
-        e.preventDefault();
-        e.stopPropagation();
-        leafletAirportsList = leafletAirportsList.filter(item => item.id !== ap.id);
-        saveCustomAirportsToStorage();
-        initAirportCheckboxes();
-        updateLeafletAirports();
-      };
-      lbl.appendChild(delBtn);
-    }
-
-    container.appendChild(lbl);
-  });
-}
-
-function initLeafletMap() {
-  if (leafletMap) {
-    setTimeout(() => leafletMap.invalidateSize(true), 100);
-    leafletMap.invalidateSize(true);
-    updateLeafletAirports();
-    updateLeafletRoute();
-    redrawAllSavedItems();
-    renderSavedDrawItems();
-    return;
-  }
-
-  leafletMap = L.map('leafletEgyptMap', {
-    center: [26.8206, 30.8025],
-    zoom: 6,
-    minZoom: 5,
-    maxZoom: 11,
-    maxBounds: egyptBounds,
-    maxBoundsViscosity: 1.0
-  });
-
-  L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
-    attribution: 'Esri',
-    maxZoom: 11
-  }).addTo(leafletMap);
-
-  airportMarkersGroup = L.layerGroup().addTo(leafletMap);
-  routeLayerGroup = L.layerGroup().addTo(leafletMap);
-  attachMapPickHandler();
-  initAirportCheckboxes();
-  updateLeafletAirports();
-  updateLeafletRoute();
-  redrawAllSavedItems();
-  renderSavedDrawItems();
-}
-
-function updateLeafletAirports() {
-  if (!leafletMap || !airportMarkersGroup) return;
-  airportMarkersGroup.clearLayers();
-
-  leafletAirportsList.forEach(ap => {
-    if (!ap.checked) return;
-    let marker = L.circleMarker([ap.lat, ap.lon], {
-      radius: 6, color: "#ffffff", weight: 2, fillColor: "#dc2626", fillOpacity: 1
-    });
-
-    marker.bindTooltip(ap.name, {
-      permanent: true, direction: 'top', offset: [0, -6], className: 'airport-permanent-label'
-    });
-
-    marker.bindPopup(`<b>${ap.name}</b><br><button style="margin-top:6px;padding:5px 10px;background:#2563eb;color:#fff;border:none;border-radius:6px;font-weight:bold;cursor:pointer;" onclick="setDestFromMap(${ap.lat}, ${ap.lon})">📍 تعيين كنقطة وصول (B)</button>`);
-    
-    airportMarkersGroup.addLayer(marker);
-  });
-}
-
-window.setDestFromMap = function(lat, lon) {
-  const latAbs = Math.abs(lat);
-  const latD = Math.floor(latAbs);
-  const latMFloat = (latAbs - latD) * 60;
-  const latM = Math.floor(latMFloat);
-  const latS = ((latMFloat - latM) * 60).toFixed(2);
-
-  const lonAbs = Math.abs(lon);
-  const lonD = Math.floor(lonAbs);
-  const lonMFloat = (lonAbs - lonD) * 60;
-  const lonM = Math.floor(lonMFloat);
-  const lonS = ((lonMFloat - lonM) * 60).toFixed(2);
-
-  $("targetLatHem").value = lat >= 0 ? "N" : "S";
-  $("targetLatDeg").value = latD;
-  $("targetLatMin").value = latM;
-  $("targetLatSec").value = latS;
-
-  $("targetLonHem").value = lon >= 0 ? "E" : "W";
-  $("targetLonDeg").value = lonD;
-  $("targetLonMin").value = lonM;
-  $("targetLonSec").value = lonS;
-
-  calcFlight();
-  updateLeafletRoute();
-  leafletMap.closePopup();
-};
-
-function updateLeafletRoute() {
-  if (!leafletMap || !routeLayerGroup) return;
-  routeLayerGroup.clearLayers();
-
-  let a = getStartCoords();
-  let bLat = dms("targetLat", "targetLatHem");
-  let bLon = dms("targetLon", "targetLonHem");
-
-  if (!Number.isFinite(a.lat) || !Number.isFinite(a.lon) || !Number.isFinite(bLat) || !Number.isFinite(bLon)) {
-    return;
-  }
-
-  // Start Marker A
-  L.circleMarker([a.lat, a.lon], { radius: 8, color: '#fff', weight: 2, fillColor: '#10b981', fillOpacity: 1 })
-    .bindTooltip("A · البداية", { permanent: true, direction: 'bottom', offset: [0, 8], className: 'airport-permanent-label' })
-    .addTo(routeLayerGroup);
-
-  // Dest Marker B
-  L.circleMarker([bLat, bLon], { radius: 8, color: '#fff', weight: 2, fillColor: '#ef4444', fillOpacity: 1 })
-    .bindTooltip("B · الوصول", { permanent: true, direction: 'bottom', offset: [0, 8], className: 'airport-permanent-label' })
-    .addTo(routeLayerGroup);
-
-  // Outbound Line (Go: A -> B)
-  let outboundLine = L.polyline([[a.lat, a.lon], [bLat, bLon]], {
-    color: '#ef4444', weight: 4, dashArray: '8, 6'
-  }).addTo(routeLayerGroup);
-
-  if (showArrows) {
-    const goAngle = calculateAngleDeg(a.lat, a.lon, bLat, bLon);
-    [0.25, 0.55].forEach(t => {
-      const arrowLat = a.lat + (bLat - a.lat) * t;
-      const arrowLon = a.lon + (bLon - a.lon) * t;
-      L.marker([arrowLat, arrowLon], { icon: createArrowIcon(goAngle, '#ef4444'), interactive: false })
-        .addTo(routeLayerGroup);
-    });
-  }
-
-  // Return Line (Back: B -> A) directly on top of the outbound path
-  let isRound = $("roundTrip").checked;
-  if (isRound) {
-    L.polyline([[bLat, bLon], [a.lat, a.lon]], {
-      color: '#a855f7', weight: 4, dashArray: '8, 12', dashOffset: '8'
-    }).addTo(routeLayerGroup);
-
-    if (showArrows) {
-      const backAngle = calculateAngleDeg(bLat, bLon, a.lat, a.lon);
-      [0.35, 0.75].forEach(t => {
-        const arrowLat = bLat + (a.lat - bLat) * t;
-        const arrowLon = bLon + (a.lon - bLon) * t;
-        L.marker([arrowLat, arrowLon], { icon: createArrowIcon(backAngle, '#a855f7'), interactive: false })
-          .addTo(routeLayerGroup);
-      });
-    }
-  }
-
-  leafletMap.fitBounds(outboundLine.getBounds(), { padding: [50, 50], maxZoom: 9 });
-}
-
-// Toggle Add Custom Airport Form
-$("toggleAddAirportForm").onclick = () => {
-  $("addAirportBox").classList.toggle("hidden");
-};
-
-// Save New Custom Airport
-$("saveNewAirportBtn").onclick = () => {
-  const name = $("newApName").value.trim();
-  if (!name) {
-    alert("Please enter airport name / يرجى إدخال اسم المطار");
-    return;
-  }
-  const lat = dms("newApLat", "newApLatHem");
-  const lon = dms("newApLon", "newApLonHem");
-  if (!Number.isFinite(lat) || !Number.isFinite(lon)) {
-    alert("Invalid coordinates / إحداثيات غير صحيحة");
-    return;
-  }
-
-  const newAp = {
-    id: "custom_" + Date.now(),
-    name: name,
-    lat: lat,
-    lon: lon,
-    checked: true,
-    custom: true
-  };
-
-  leafletAirportsList.push(newAp);
-  saveCustomAirportsToStorage();
-  initAirportCheckboxes();
-  updateLeafletAirports();
-
-  $("newApName").value = "";
-  ["newApLatDeg", "newApLatMin", "newApLatSec", "newApLonDeg", "newApLonMin", "newApLonSec"].forEach(id => $(id).value = "");
-  $("addAirportBox").classList.add("hidden");
-};
-
-// Show All / Hide All
-$("selectAllAirports").onclick = () => {
-  leafletAirportsList.forEach(ap => ap.checked = true);
-  initAirportCheckboxes();
-  updateLeafletAirports();
-};
-
-$("deselectAllAirports").onclick = () => {
-  leafletAirportsList.forEach(ap => ap.checked = false);
-  initAirportCheckboxes();
-  updateLeafletAirports();
-};
-
-// Toggle Arrows Button
-$("toggleRouteArrowsBtn").onclick = () => {
-  showArrows = !showArrows;
-  $("toggleRouteArrowsBtn").classList.toggle("active", showArrows);
-  $("toggleRouteArrowsBtn").textContent = showArrows ? "➤ أسهم السير: مفعلة" : "➤ إظهار أسهم السير";
-  updateLeafletRoute();
-};
-
-// View Route Button -> Opens Leaflet Map Modal
-$("showRouteMap").onclick = () => {
-  calcFlight();
-  $("mapModalOverlay").classList.remove("hidden");
-  setTimeout(() => {
-    initLeafletMap();
-    if (leafletMap) leafletMap.invalidateSize(true);
-  }, 250);
-};
-
-// Exit Map Modal
-$("exitMapModal").onclick = () => {
-  $("mapModalOverlay").classList.add("hidden");
-};
-
-
-// Wind component calculator
-(()=>{const modal=$('windCalculatorModal'),ids=['windDir','windSpeed','runwayHeading'];function calc(){let wd=Number($('windDir').value),ws=Number($('windSpeed').value),rh=Number($('runwayHeading').value);if(ids.some(id=>$(id).value.trim()==='')||![wd,ws,rh].every(Number.isFinite)||ws<0||wd<0||wd>360||rh<0||rh>360){$('windCross').textContent='— kt';$('windHead').textContent='— kt';$('windAngle').textContent='Relative wind angle: —';return;}let diff=((wd-rh+540)%360)-180,rad=diff*Math.PI/180,cross=ws*Math.sin(rad),head=ws*Math.cos(rad);$('windCross').textContent=Math.abs(cross).toFixed(1)+' kt '+(cross>=0?'from right':'from left');$('windHead').textContent=(head>=0?'+':'−')+Math.abs(head).toFixed(1)+' kt '+(head>=0?'headwind':'tailwind');$('windAngle').textContent='Relative wind angle: '+Math.abs(diff).toFixed(1)+'°';}ids.forEach(id=>$(id).addEventListener('input',calc));$('openWindCalculator').onclick=()=>{modal.classList.remove('hidden');document.body.style.overflow='hidden';calc();};function close(){modal.classList.add('hidden');document.body.style.overflow='';}$('exitWindCalculator').onclick=close;modal.addEventListener('click',e=>{if(e.target===modal)close();});document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!modal.classList.contains('hidden'))close();});})();
-
-// ================= ZONE & ROUTE BUILDER v5 =================
-const DRAW_STORAGE_KEY='aerocalc_saved_zones_routes_v1';
-let savedDrawItems=[]; let drawLayers={}; let zoneDraft=[]; let routeDraft=[]; let editingZoneId=null; let waitingPick=''; let zoneEnded=false; let zonePreviewLayer=null;
-try{savedDrawItems=JSON.parse(localStorage.getItem(DRAW_STORAGE_KEY)||'[]');}catch(e){savedDrawItems=[];}
-function persistDrawItems(){try{localStorage.setItem(DRAW_STORAGE_KEY,JSON.stringify(savedDrawItems));}catch(e){alert('Unable to save in this browser storage.');}}
-function escDraw(v){return String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
-function distNm(a,b){return L.latLng(a[0],a[1]).distanceTo(L.latLng(b[0],b[1]))/1852;}
-function brgTrue(a,b){return calculateAngleDeg(a[0],a[1],b[0],b[1]);}
-function validPoint(lat,lon){return Number.isFinite(lat)&&Number.isFinite(lon)&&Math.abs(lat)<=90&&Math.abs(lon)<=180;}
-function pointInside(point,poly){let x=point[1],y=point[0],inside=false;for(let i=0,j=poly.length-1;i<poly.length;j=i++){let xi=poly[i][1],yi=poly[i][0],xj=poly[j][1],yj=poly[j][0];let intersect=((yi>y)!==(yj>y))&&(x<(xj-xi)*(y-yi)/(yj-yi+1e-15)+xi);if(intersect)inside=!inside;}return inside;}
-function segmentInside(a,b,poly){for(let k=1;k<20;k++){let t=k/20,p=[a[0]+(b[0]-a[0])*t,a[1]+(b[1]-a[1])*t];if(!pointInside(p,poly))return false;}return true;}
-function selectedZone(){return savedDrawItems.find(x=>x.id===$('routeZoneSelect').value&&x.type==='zone');}
-const ROUTE_CRUISE_SPEED_KT=78;
-function formatRouteTime(hours){let totalSeconds=Math.max(0,Math.round(hours*3600));const h=Math.floor(totalSeconds/3600);totalSeconds%=3600;const m=Math.floor(totalSeconds/60),sec=totalSeconds%60;return [h?`${h} hr`:null,(h||m)?`${m} min`:null,`${sec} sec`].filter(Boolean).join(' ');}
-function drawItemMetrics(points,closed=false){let total=0,totalHours=0,lines=[];for(let i=1;i<points.length;i++){let a=points[i-1].coords||points[i-1],b=points[i].coords||points[i];let nm=distNm(a,b);total+=nm;let leg=`${points[i-1].name||'P'+i} → ${points[i].name||'P'+(i+1)}: ${nm.toFixed(2)} NM / ${(nm*1.852).toFixed(2)} km · ${brgTrue(a,b).toFixed(0)}°T`;if(!closed){const hrs=nm/ROUTE_CRUISE_SPEED_KT;totalHours+=hrs;leg+=`\n   Time @ ${ROUTE_CRUISE_SPEED_KT} kt: ${formatRouteTime(hrs)}`;}lines.push(leg);}if(closed&&points.length>2){let a=points[points.length-1].coords||points[points.length-1],b=points[0].coords||points[0];let nm=distNm(a,b);total+=nm;lines.push(`Closing leg: ${nm.toFixed(2)} NM · ${brgTrue(a,b).toFixed(0)}°T`);}let summary=`Total ${closed?'boundary':'route'}: ${total.toFixed(2)} NM (${(total*1.852).toFixed(2)} km)`;if(!closed)summary+=`\nTotal time @ ${ROUTE_CRUISE_SPEED_KT} kt: ${formatRouteTime(totalHours)} · Speed: ${ROUTE_CRUISE_SPEED_KT} KTS`;return `${summary}\n${lines.join('\n')}`;}
-function renderDraftList(kind){let arr=kind==='zone'?zoneDraft:routeDraft;let el=$(kind==='zone'?'zonePointsList':'routePointsList');el.innerHTML='';arr.forEach((p,i)=>{let row=document.createElement('div');row.className='zb-point';let info=document.createElement('span');info.textContent=kind==='zone'?`${i+1}. ${formatDms(p.coords[0],true)} / ${formatDms(p.coords[1],false)}`:`${i+1}. ${p.name} · ${formatDms(p.coords[0],true)} / ${formatDms(p.coords[1],false)}`;let del=document.createElement('button');del.textContent='Remove';del.className='red';del.onclick=()=>{arr.splice(i,1);if(kind==='zone'){zoneEnded=false;updateZonePreview();}renderDraftList(kind);updateDraftMetrics(kind);};row.append(info,del);el.appendChild(row);});}
-function updateZonePreview(){if(!leafletMap)return;if(zonePreviewLayer){leafletMap.removeLayer(zonePreviewLayer);zonePreviewLayer=null;}if(!zoneDraft.length)return;zonePreviewLayer=L.layerGroup();zonePreviewLayer.addLayer(L.polyline(zoneDraft.map(p=>p.coords),{color:'#f59e0b',weight:3,dashArray:'6,5'}));zoneDraft.forEach((p,i)=>zonePreviewLayer.addLayer(L.circleMarker(p.coords,{radius:5,color:'#fff',weight:1,fillColor:'#f59e0b',fillOpacity:1}).bindTooltip('Point '+(i+1))));zonePreviewLayer.addTo(leafletMap);if(zoneDraft.length>1)leafletMap.fitBounds(zonePreviewLayer.getBounds(),{padding:[25,25]});}
-function updateDraftMetrics(kind){if(kind==='zone')$('zoneStatus').textContent=zoneDraft.length<3?`${zoneDraft.length} points · Need at least 3 points.`:drawItemMetrics(zoneDraft,true);else $('routeMetrics').textContent=routeDraft.length<2?`${routeDraft.length} points · Need at least 2 route points.`:drawItemMetrics(routeDraft,false);}
-function drawSavedItem(item){if(!leafletMap)return;if(drawLayers[item.id])leafletMap.removeLayer(drawLayers[item.id]);let g=L.featureGroup(),isZone=item.type==='zone',color=isZone?'#f59e0b':'#a855f7';let coords=item.points.map(p=>p.coords||p);let shape=isZone?L.polygon(coords,{color,weight:3,fillColor:color,fillOpacity:.15}):L.polyline(coords,{color,weight:4,dashArray:'8,5'});shape.bindTooltip(item.name,{sticky:true});let metric=isZone?drawItemMetrics(item.points,true):drawItemMetrics(item.points,false);shape.bindPopup(`<b>${escDraw(item.name)}</b><br>${isZone?'ZONE':'ROUTE'}<br>${escDraw(metric).replace(/\n/g,'<br>')}`);g.addLayer(shape);item.points.forEach((p,i)=>{let c=p.coords||p,marker=L.circleMarker(c,{radius:5,color:'#fff',weight:1,fillColor:color,fillOpacity:1});if(!isZone)marker.bindTooltip(`${escDraw(p.name||'Point '+(i+1))}<br>${formatDms(c[0],true)}<br>${formatDms(c[1],false)}`);marker.addTo(g);});g.addTo(leafletMap);drawLayers[item.id]=g;}
-function redrawAllSavedItems(){if(!leafletMap)return;Object.values(drawLayers).forEach(l=>leafletMap.removeLayer(l));drawLayers={};savedDrawItems.forEach(drawSavedItem);}
-function refreshZoneSelect(){let s=$('routeZoneSelect'),v=s.value;s.innerHTML='<option value="">Select a zone…</option>';savedDrawItems.filter(x=>x.type==='zone').forEach(z=>{let o=document.createElement('option');o.value=z.id;o.textContent=z.name;s.appendChild(o);});if([...s.options].some(o=>o.value===v))s.value=v;}
-function renderSavedDrawItems(){let box=$('savedDrawItems');box.innerHTML='';savedDrawItems.forEach(item=>{let row=document.createElement('div');row.className='zone-saved-item';let label=document.createElement('span');label.textContent=(item.type==='zone'?'⬟ ':'➜ ')+item.name+' · '+item.points.length+' points';row.appendChild(label);let actions=item.type==='zone'?[['Show',()=>{drawSavedItem(item);leafletMap.fitBounds(drawLayers[item.id].getBounds(),{padding:[25,25]});}],['Edit',()=>{editingZoneId=item.id;zoneEnded=true;zoneDraft=item.points.map((p,i)=>({name:'Point '+(i+1),coords:p.coords||p}));$('zoneName').value=item.name;$('zoneEditor').style.display='block';$('routeEditor').style.display='none';$('zoneManager').classList.add('open');renderDraftList('zone');updateDraftMetrics('zone');updateZonePreview();}],['Add Route',()=>{$('zoneManager').classList.add('open');$('zoneEditor').style.display='none';$('routeEditor').style.display='block';refreshZoneSelect();$('routeZoneSelect').value=item.id;}],['Hide',()=>{if(drawLayers[item.id])leafletMap.removeLayer(drawLayers[item.id]);}],['Delete',()=>{if(!confirm('Delete zone and its routes?'))return;savedDrawItems=savedDrawItems.filter(x=>x.id!==item.id&&x.zoneId!==item.id);persistDrawItems();renderSavedDrawItems();redrawAllSavedItems();}]]:[['Show',()=>{drawSavedItem(item);leafletMap.fitBounds(drawLayers[item.id].getBounds(),{padding:[25,25]});}],['Delete',()=>{if(!confirm('Delete route?'))return;savedDrawItems=savedDrawItems.filter(x=>x.id!==item.id);persistDrawItems();renderSavedDrawItems();redrawAllSavedItems();}]];actions.forEach(([t,fn])=>{let b=document.createElement('button');b.textContent=t;b.onclick=fn;row.appendChild(b);});box.appendChild(row);});refreshZoneSelect();}
-function dmsToDecimal(degId,minId,secId,hemId){let d=Number($(degId).value),m=Number($(minId).value||0),sec=Number($(secId).value||0),hem=$(hemId).value;if($(degId).value.trim()===""||!Number.isFinite(d)||!Number.isFinite(m)||!Number.isFinite(sec)||m<0||m>=60||sec<0||sec>=60)throw Error("Enter valid DMS coordinates (minutes/seconds 0–59).");let val=d+m/60+sec/3600;return hem==='S'||hem==='W'?-val:val;}
-function getZoneDms(){return [dmsToDecimal('zoneLatDeg','zoneLatMin','zoneLatSec','zoneLatHem'),dmsToDecimal('zoneLonDeg','zoneLonMin','zoneLonSec','zoneLonHem')];}
-function setZoneDms(lat,lon){function set(prefix,val,hem){let abs=Math.abs(val),d=Math.floor(abs),mFloat=(abs-d)*60,m=Math.floor(mFloat),sec=(mFloat-m)*60;$(prefix+'Deg').value=d;$(prefix+'Min').value=m;$(prefix+'Sec').value=sec.toFixed(2);$(prefix+'Hem').value=hem;}set('zoneLat',lat,lat<0?'S':'N');set('zoneLon',lon,lon<0?'W':'E');}
-function clearZoneDms(){['zoneLatDeg','zoneLatMin','zoneLatSec','zoneLonDeg','zoneLonMin','zoneLonSec'].forEach(id=>$(id).value='');$('zoneLatHem').value='N';$('zoneLonHem').value='E';}
-function getDraftPoint(prefix){let name=prefix==='zone'?'Point '+(zoneDraft.length+1):($('routePointName').value.trim()||'WP '+String(routeDraft.length+1).padStart(2,'0')),coords=prefix==='zone'?getZoneDms():getRouteDms();if(!validPoint(coords[0],coords[1]))throw Error('Invalid coordinates. Latitude must be -90..90 and longitude -180..180.');return {name,coords};}
-function getRouteDms(){return [dmsToDecimal('routeLatDeg','routeLatMin','routeLatSec','routeLatHem'),dmsToDecimal('routeLonDeg','routeLonMin','routeLonSec','routeLonHem')];}
-function setDmsFields(prefix,lat,lon){function set(axis,val,hem){let a=Math.abs(val),d=Math.floor(a),mf=(a-d)*60,m=Math.floor(mf),sec=(mf-m)*60;$(prefix+axis+'Deg').value=d;$(prefix+axis+'Min').value=m;$(prefix+axis+'Sec').value=sec.toFixed(2);$(prefix+axis+'Hem').value=hem;}set('Lat',lat,lat<0?'S':'N');set('Lon',lon,lon<0?'W':'E');}
-function clearRouteDms(){['routeLatDeg','routeLatMin','routeLatSec','routeLonDeg','routeLonMin','routeLonSec'].forEach(id=>$(id).value='');$('routeLatHem').value='N';$('routeLonHem').value='E';}
-function formatDms(value,isLat){let hem=value<0?(isLat?'S':'W'):(isLat?'N':'E'),a=Math.abs(value),d=Math.floor(a),mf=(a-d)*60,m=Math.floor(mf),sec=((mf-m)*60);return `${d}° ${String(m).padStart(2,'0')}′ ${sec.toFixed(2).padStart(5,'0')}″ ${hem}`;}
-$('createZoneBtn').onclick=()=>{$('zoneManager').classList.add('open');$('zoneEditor').style.display='block';$('routeEditor').style.display='none';zoneDraft=[];editingZoneId=null;zoneEnded=false;if(zonePreviewLayer&&leafletMap){leafletMap.removeLayer(zonePreviewLayer);zonePreviewLayer=null;}$('zoneName').value='';renderDraftList('zone');updateDraftMetrics('zone');};
-$('openRouteBtn').onclick=()=>{$('zoneManager').classList.add('open');$('zoneEditor').style.display='none';$('routeEditor').style.display='block';routeDraft=[];refreshZoneSelect();renderDraftList('route');updateDraftMetrics('route');};
-$('addZonePointBtn').onclick=()=>{try{zoneDraft.push(getDraftPoint('zone'));clearZoneDms();updateZonePreview();renderDraftList('zone');updateDraftMetrics('zone');}catch(e){alert(e.message);}};
-$('endZoneBtn').onclick=()=>{if(zoneDraft.length<3){alert('A zone needs at least 3 points.');return;}zoneEnded=true;if(leafletMap){updateZonePreview();let coords=zoneDraft.map(p=>p.coords);let preview=L.polygon(coords,{color:'#f59e0b',weight:3,fillOpacity:.12,dashArray:'5,5'});preview.addTo(leafletMap);leafletMap.fitBounds(preview.getBounds(),{padding:[25,25]});setTimeout(()=>leafletMap.removeLayer(preview),4500);} $('zoneStatus').textContent='✓ Zone boundary closed: last point connected to first. Now Save Zone.';};
-$('saveZoneBtn').onclick=()=>{let name=$('zoneName').value.trim();if(!name){alert('Enter a zone label.');return;}if(zoneDraft.length<3||!zoneEnded){alert('Add at least 3 zone points and press END ZONE before saving.');return;}let id=editingZoneId||('zone_'+Date.now());let item={id,name,type:'zone',points:zoneDraft.map((p,i)=>({name:'Point '+(i+1),coords:p.coords}))};let ix=savedDrawItems.findIndex(x=>x.id===id);if(ix>=0)savedDrawItems[ix]=item;else savedDrawItems.push(item);persistDrawItems();drawSavedItem(item);leafletMap.fitBounds(drawLayers[id].getBounds(),{padding:[25,25]});editingZoneId=null;zoneDraft=[];if(zonePreviewLayer&&leafletMap){leafletMap.removeLayer(zonePreviewLayer);zonePreviewLayer=null;}$('zoneEditor').style.display='none';renderSavedDrawItems();};
-$('addRoutePointBtn').onclick=()=>{try{let z=selectedZone();if(!z)throw Error('Select a saved zone first.');let p=getDraftPoint('route');let poly=z.points.map(x=>x.coords||x);if(!pointInside(p.coords,poly))throw Error('This point is outside the selected zone.');if(routeDraft.length&&!segmentInside(routeDraft[routeDraft.length-1].coords,p.coords,poly))throw Error('The route segment leaves the selected zone.');routeDraft.push(p);$('routePointName').value='';clearRouteDms();renderDraftList('route');updateDraftMetrics('route');}catch(e){alert(e.message);}};
-$('saveRouteBtn').onclick=()=>{let z=selectedZone(),name=$('routeName').value.trim();if(!z){alert('Select a zone first.');return;}if(!name){alert('Enter a route label.');return;}if(routeDraft.length<2){alert('A route needs at least 2 points.');return;}let item={id:'route_'+Date.now(),name,type:'route',zoneId:z.id,points:routeDraft.map(p=>({name:p.name,coords:p.coords}))};savedDrawItems.push(item);persistDrawItems();drawSavedItem(item);leafletMap.fitBounds(drawLayers[item.id].getBounds(),{padding:[25,25]});routeDraft=[];$('routeName').value='';renderDraftList('route');updateDraftMetrics('route');renderSavedDrawItems();};
-$('cancelZoneBtn').onclick=()=>{$('zoneEditor').style.display='none';zoneDraft=[];editingZoneId=null;if(zonePreviewLayer&&leafletMap){leafletMap.removeLayer(zonePreviewLayer);zonePreviewLayer=null;}};$('cancelRouteBtn').onclick=()=>{$('routeEditor').style.display='none';routeDraft=[];waitingPick='';if(leafletMap)leafletMap.getContainer().style.cursor='';};
-function beginMapPick(kind){
-  if(kind==='route'&&!selectedZone()){alert('Select a saved zone first.');return;}
-  if(kind==='route'&&!$('routePointName').value.trim())$('routePointName').value='WP '+String(routeDraft.length+1).padStart(2,'0');
-  waitingPick=kind;
-  const overlay=$('mapModalOverlay');overlay.classList.remove('hidden');
-  if(!leafletMap)initLeafletMap();
-  setTimeout(()=>{
-    if(leafletMap){
-      leafletMap.invalidateSize(true);
-      attachMapPickHandler();
-      leafletMap.getContainer().style.cursor='crosshair';
-      leafletMap.closePopup();
-      const mapEl=leafletMap.getContainer();
-      mapEl.scrollIntoView({block:'nearest',behavior:'smooth'});
-    }
-    alert(kind==='route'?'Map is ready. Click anywhere inside the selected zone to add a route waypoint.':'Map is ready. Click the map to add a zone point.');
-  },350);
-}
-$('zoneMapPickBtn').onclick=()=>beginMapPick('zone');$('routeMapPickBtn').onclick=()=>beginMapPick('route');
-// Capture map clicks directly on the map container. This is more reliable than
-// Leaflet's bubbled map-click event when the user clicks on a polygon/marker layer.
-let mapPickClickHandler=null;
-function attachMapPickHandler(){
-  if(!leafletMap)return;
-  const container=leafletMap.getContainer();
-  if(mapPickClickHandler){container.removeEventListener('click',mapPickClickHandler,true);}
-  mapPickClickHandler=function(event){
-    if(!waitingPick)return;
-    if(event.target && event.target.closest && event.target.closest('.leaflet-control'))return;
-    event.preventDefault();
-    event.stopPropagation();
-    if(event.stopImmediatePropagation)event.stopImmediatePropagation();
-    const latlng=leafletMap.mouseEventToLatLng(event);
-    handleMapPoint({latlng});
-  };
-  container.addEventListener('click',mapPickClickHandler,true);
-}
-function handleMapPoint(e){
-  if(!waitingPick)return;
-  const kind=waitingPick;
-  const coords=[Number(e.latlng.lat.toFixed(6)),Number(e.latlng.lng.toFixed(6))];
-  if(kind==='zone'){
-    const p={name:'Point '+(zoneDraft.length+1),coords};zoneDraft.push(p);setZoneDms(coords[0],coords[1]);updateZonePreview();renderDraftList('zone');updateDraftMetrics('zone');
-  }else{
-    const z=selectedZone(),poly=z?z.points.map(x=>x.coords||x):[];
-    if(!z||!pointInside(coords,poly)||(routeDraft.length&&!segmentInside(routeDraft[routeDraft.length-1].coords,coords,poly))){alert('Point rejected: it must be inside the selected zone, and the connecting route segment must remain inside the zone.');return;}
-    const name=$('routePointName').value.trim()||'WP '+String(routeDraft.length+1).padStart(2,'0');
-    routeDraft.push({name,coords});$('routePointName').value='';setDmsFields('route',coords[0],coords[1]);renderDraftList('route');updateDraftMetrics('route');
-  }
-  waitingPick='';if(leafletMap)leafletMap.getContainer().style.cursor='';
-}
-
-renderSavedDrawItems();
-
-</script>
-</body>
-</html>
+[...]
